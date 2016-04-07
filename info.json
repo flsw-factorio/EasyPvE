@@ -1,0 +1,10 @@
+{
+  "name": "EasyPvE",
+  "version": "0.1.0",
+  "title": "EasyPvE",
+  "author": "reticentae",
+  "contact": "",
+  "homepage": "",
+  "description": "A fork of EasyPvP that enforces ceasefires between player teams.",
+  "dependencies": ["base"]
+}
