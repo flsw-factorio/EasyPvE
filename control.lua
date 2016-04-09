@@ -91,7 +91,7 @@ local function new_force( ply, event )
 	-- Enforce Peace
 	for name, force in pairs(game.forces) do
 		if name ~= 'enemy' and name ~= 'neutral' and name ~= text then
-			game.player.print("Setting ceasefire between " .. name .. " and " .. ply.force.name )
+			print_all("Setting ceasefire between " .. name .. " and " .. ply.force.name )
 			force.set_cease_fire(ply.force.name, true)
 		end
 	end
