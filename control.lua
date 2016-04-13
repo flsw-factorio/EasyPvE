@@ -93,6 +93,8 @@ local function new_force( ply, event )
 		if name ~= 'enemy' and name ~= 'neutral' and name ~= text then
 			print_all("Setting ceasefire between " .. name .. " and " .. ply.force.name )
 			force.set_cease_fire(ply.force.name, true)
+			print_all("Setting ceasefire between " .. ply.force.name .. " and " .. name )
+			ply.force.set_cease_fire(name, true)
 		end
 	end
 	update_gui()
